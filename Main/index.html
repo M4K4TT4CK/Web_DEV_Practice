@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!--Tell the browser what type of HTML it is using-->
+<!--
+    this is am HTML cheatsheet for reference
+-->
+<html>
+    <head>
+        <!--Title of Page/Tab-->
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <!--Body of Webpage-->
+    <body>
+        <a href="blog.html">Go to Blog</a>
+        <hr>
+        <!--Headers-->
+        <h1>This is a header</h1>
+        <h2>This is a header</h2>
+        <h3>This is a header</h3>
+        <h4>This is a header</h4>
+        <h5>This is a header</h5>
+        <h6>This is a header</h6>
+        <br> <!--Add break to section-->
+        <!--Paragraph-->
+        <p>
+            <h3>Inline elements</h3><br>
+            - Do not start on new line <br>
+            - Take only needed width<br>
+        </p>
+        <p>
+            <h3>Block elements</h3><br>
+            - Start on a new line<br>
+            - Take full width available<br>
+        </p>
+        <p>
+            <!--strong bolds a thing-->
+            <strong>Block Level</strong>: div, h1, h6, p, form <br>
+        </p>
+        <p>
+            <strong>Inline level</strong>: span, img, a<br>
+        </p>
+        <p>
+            <strong> Tag Attributes</strong>: <!--<i>  or <em> makes things italic--><i>All
+                tags can have Attributes; provide information
+                about an element; placed in start tag; Key/value pairs
+                (id="someID")</i>
+        </p>
+        <!--a tag to add links, target blank to opern new page-->
+        <p><a href="http://google.com" target="_blank">Lorem ipsum dolor </a>
+            sit, amet consectetur adipisicing elit.
+            Quis, distinctio voluptate, impedit omnis similique aperiam
+            alias quam vitae non eligendi neque voluptas qui cupiditate
+            recusandae fugit obcaecati tempore praesentium quas.</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Non reiciendis consequatur maxime mollitia magni sunt iusto
+            ducimus officia enim? Magni quaerat fugiat quam laborum labore
+            mollitia aspernatur dicta voluptatum cum!</p>
+        <!--Lists: two types-->
+        <!--Unorderd List-->
+        <ul>
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item four</li>
+        </ul>
+        <!--Ordered List-->
+        <ol>
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item four</li>
+        </ol>
+        <!--Tables-->
+        <table>
+            <!--starts table heading-->
+            <thead>
+                <tr> <!--rows-->
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>AGE</th>
+                </tr>
+            </thead>
+            <!--Starts table body-->
+            <tbody>
+                <tr>
+                    <td>Mike McMillin,</td> <!--columns-->
+                    <td>myemail@gmanmail.com,</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>person McMillin,</td> <!--columns-->
+                    <td>myemail@gmanmail.com,</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>other McMillin,</td> <!--columns-->
+                    <td>myemail@gmanmail.com,</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr> <!--Puts a line in the page-->
+        <!--Forms-->
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name: </label>
+                <!--Use value to put inital value in box or use placeholder to put temp data in field-->
+                <input type="text" name="firstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name: </label>
+                <input type="text" name="lastName" placeholder="Enter Last Name">
+            </div>
+            <br>
+            <div>
+                <label>Email: </label>
+                <input type="email" name="email" placeholder="Enter Email Address">
+            </div>
+            <br>
+            <div>
+                <label>Message: </label>
+                <textarea name="message" placeholder="Type message here..."></textarea>
+            </div>
+            <br>
+            <div>
+                <!--will generate a select field-->
+                <label>Gender: </label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <!--will display number in field-->
+                <label>Age: </label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <!--Add calender for date; this for birthday or other dates-->
+                <label>Birthday: </label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <br>
+        <!--buttons-->
+        <button event="someFunction">Click me</button>
+        <br>
+        <br>
+        <!--Images-->
+        <a href="Images/testPhoto.webp" target="_blank" alt="ERR_FILE_NOT_FOUND">
+        <img src="Images/testPhoto.webp" alt="ERR_FILE_NOT_FOUND" width="10%" height="10%"><!--Images are inline-->
+        </a>
+        <br>
+        <!--Quotations-->
+        <!--Blockquote, abbreviate, cite-->
+        <strong>Blockquote</strong>
+        <blockquote cite="http:www.google.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Saepe repellendus ea quae odit! Alias harum numquam, 
+            iusto exercitationem maxime dicta fugiat dolor nulla, 
+            est itaque voluptate, voluptatibus tenetur. Enim, soluta? 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Itaque dicta autem modi inventore laborum ea id ducimus 
+            quis necessitatibus enim, ad velit quam! Eum, quasi explicabo! 
+            Ut aliquid recusandae illo?
+        </blockquote>
+        <br>
+        <strong>Abbreviation</strong>
+        <p>
+            - The <abbr title="World Wide Web">WWW</abbr> is awesome.
+        </p>
+        <br>
+        <br>
+        <strong>Cite</strong>
+        <p>
+            <cite>HTML Crash course</cite> by Brad Traversy
+        </p>
+        <div style="margin-top:500px;"></div>
+    </body>
+</html>
